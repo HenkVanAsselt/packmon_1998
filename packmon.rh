@@ -1,0 +1,14 @@
+//----------------------------------------------------------------------------
+// ObjectWindows - (C) Copyright 1991, 1993 by Borland International
+//        
+//----------------------------------------------------------------------------
+#define CM_POPUPITEM	101
+#include <owl\window.rh>
+
+#define PACKMONWnd_MENU  1
+#define CM_OPENLOGFILE	102
+#define CM_OPTIONSDATA_ONLY	104
+#define CM_SOUNDEFFECTS	103
+#define CM_DDECONNECT	101
+
+#define CM_HELPABOUT    0x200

@@ -1,0 +1,30 @@
+//----------------------------------------------------------------------------
+// ObjectWindows - (C) Copyright 1991, 1993 by Borland International
+//----------------------------------------------------------------------------
+#ifndef WORKSHOP_INVOKED
+  #include <windows.h>
+#endif
+#include "packmon.rh"
+#include <owl\inputdia.rh>
+#include <owl\inputdia.rc>
+
+PACKMONWnd_MENU MENU 
+{
+ POPUP "&File"
+ {
+  MENUITEM "&Connect", CM_DDECONNECT
+  MENUITEM "&Open File", CM_FILEOPEN
+  MENUITEM "E&xit", CM_EXIT
+ }
+
+ POPUP "&Options"
+ {
+  MENUITEM "&Sound", CM_SOUNDEFFECTS, CHECKED
+ }
+
+ POPUP "\a&Help"
+ {
+  MENUITEM "&About", CM_HELPABOUT
+ }
+
+}

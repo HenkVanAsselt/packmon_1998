@@ -1,0 +1,11 @@
+//----------------------------------------------------------------------------
+// ObjectWindows - (C) Copyright 1991, 1993 by Borland International
+//        
+//----------------------------------------------------------------------------
+#include <owl\window.rh>
+
+#define PACKMONWnd_MENU  1
+#define CM_FILEOPEN	  102
+#define CM_DDECONNECT	101
+
+#define CM_HELPABOUT    0x200

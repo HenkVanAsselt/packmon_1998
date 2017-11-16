@@ -1,0 +1,40 @@
+//----------------------------------------------------------------------------
+// ObjectWindows - (C) Copyright 1991, 1993 by Borland International
+//----------------------------------------------------------------------------
+#ifndef WORKSHOP_INVOKED
+  #include <windows.h>
+#endif
+#include "packmon.rh"
+#include <owl\inputdia.rh>
+#include <owl\inputdia.rc>
+
+PACKMONWnd_MENU MENU 
+{
+ POPUP "&File"
+ {
+  MENUITEM "C&onnect", CM_DDECONNECT
+  MENUITEM "O&pen File", CM_OPENLOGFILE
+  MENUITEM "E&xit", CM_EXIT
+ }
+
+ POPUP "&Options"
+ {
+  MENUITEM "&Sound", CM_SOUNDEFFECTS, CHECKED
+  MENUITEM "Data Only", CM_OPTIONSDATA_ONLY, INACTIVE, CHECKED
+ }
+
+ POPUP "\a&Help"
+ {
+  MENUITEM "&About", CM_HELPABOUT
+ }
+
+}
+STRINGTABLE 
+{
+ CM_OPTIONSDATA_ONLY, "Show only datapart of a packet"
+ CM_DDECONNECT, "Connect to SV2AGW Packet Engine"
+ CM_OPENLOGFILE, "Open File for input playback"
+ CM_EXIT, "Exit this program"
+ CM_SOUNDEFFECTS, "Toggel Sound Effects"
+ CM_HELPABOUT, "Describes this program"
+}
